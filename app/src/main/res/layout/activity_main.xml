@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/search_result_panel" />
+    <include android:layout_width="fill_parent"
+        android:layout_height="64.0dip"
+        android:layout_marginTop="24.0dip"
+        layout="@layout/search_bar" />
+    <com.vanbo.homeux.dravite.newlayouttest.views.DragSurfaceLayout
+        android:id="@id/dragView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:translationZ="10.0dip" />
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@id/coordinatorLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <include layout="@layout/layout_top_panel" />
+        <View
+            android:id="@id/indicator"
+            android:background="@drawable/page_indicator"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="6.0dip"
+            android:layout_marginTop="193.0dip"
+            android:transformPivotX="0.0dip"
+            android:scaleX="0.33"
+            android:elevation="3.0dip" />
+        <com.vanbo.homeux.dravite.newlayouttest.views.ObjectDropButtonStrip
+            android:id="@id/widgetArea"
+            android:background="@drawable/card_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="80.0dip"
+            android:layout_marginTop="110.0dip"
+            android:layout_marginStart="8.0dip"
+            android:layout_marginEnd="8.0dip"
+            android:elevation="2.0dip">
+            <include layout="@layout/widget_remove_button" />
+        </com.vanbo.homeux.dravite.newlayouttest.views.ObjectDropButtonStrip>
+        <com.vanbo.homeux.dravite.newlayouttest.views.VerticalViewPager
+            android:id="@id/homePager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:elevation="2.0dip" />
+        <android.support.design.widget.FloatingActionButton
+            android:layout_gravity="end|center|top"
+            android:id="@id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="165.0dip"
+            android:src="@drawable/ic_add_black_24dp"
+            android:tint="#ffffffff"
+            android:layout_marginEnd="16.0dip"
+            app:elevation="6.0dip"
+            app:borderWidth="0.0dip"
+            app:backgroundTint="?colorAccent" />
+        <android.support.design.widget.FloatingActionButton
+            android:layout_gravity="bottom|center"
+            android:id="@id/folder_drop_fab"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16.0dip"
+            android:src="@drawable/ic_folder"
+            android:tint="@android:color/black"
+            android:scaleX="0.0"
+            android:scaleY="0.0"
+            app:elevation="5.0dip"
+            app:fabSize="normal"
+            app:borderWidth="0.0dip"
+            app:backgroundTint="@android:color/white" />
+        <android.support.v7.widget.CardView
+            android:layout_gravity="bottom|center"
+            android:id="@id/folder_drop_card"
+            android:visibility="gone"
+            android:clipToPadding="false"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginTop="215.0dip"
+            android:layout_marginRight="16.0dip"
+            android:layout_marginBottom="16.0dip"
+            android:alpha="0.0"
+            android:translationY="100.0dip"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            app:cardElevation="4.0dip">
+            <android.support.v7.widget.RecyclerView
+                android:id="@id/folder_drop_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </android.support.v7.widget.CardView>
+    </android.support.design.widget.CoordinatorLayout>
+    <FrameLayout
+        android:id="@id/infoOverlay"
+        android:background="#00000000"
+        android:clickable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:elevation="20.0dip" />
+</merge>

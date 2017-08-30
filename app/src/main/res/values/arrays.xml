@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="actions_full">
+        <item>@string/action_add</item>
+        <item>@string/action_move</item>
+        <item>@string/action_remove</item>
+        <item>@string/action_hide</item>
+    </string-array>
+    <string-array name="actions_minimal">
+        <item>@string/action_add</item>
+        <item>@string/action_hide</item>
+    </string-array>
+    <string-array name="page_transformer_ids">
+        <item>accordion</item>
+        <item>backtofor</item>
+        <item>cubeout</item>
+        <item>default</item>
+        <item>depth</item>
+        <item>fliph</item>
+        <item>flipv</item>
+        <item>fortoback</item>
+        <item>rotd</item>
+        <item>rotu</item>
+        <item>scale</item>
+        <item>stack</item>
+        <item>tab</item>
+        <item>zoomin</item>
+        <item>zoomouts</item>
+        <item>zoomout</item>
+        <item>individual</item>
+    </string-array>
+    <string-array name="page_transformer_names">
+        <item>@string/accordion</item>
+        <item>@string/backtofor</item>
+        <item>@string/cubeout</item>
+        <item>@string/default_</item>
+        <item>@string/depth</item>
+        <item>@string/fliph</item>
+        <item>@string/flipv</item>
+        <item>@string/fortoback</item>
+        <item>@string/rotd</item>
+        <item>@string/rotu</item>
+        <item>@string/scale</item>
+        <item>@string/stack</item>
+        <item>@string/tab</item>
+        <item>@string/zoomin</item>
+        <item>@string/zoomouts</item>
+        <item>@string/zoomout</item>
+        <item>@string/individual</item>
+    </string-array>
+    <string-array name="sizes">
+        <item>@string/small</item>
+        <item>@string/medium</item>
+        <item>@string/large</item>
+    </string-array>
+</resources>

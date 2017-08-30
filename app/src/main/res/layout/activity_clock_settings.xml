@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="4.0dip">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:background="#ff2196f3" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+            <Switch android:theme="@style/AppTheme.WhiteSwitch" android:id="@id/clockSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_centerVertical="true" android:layout_marginEnd="16.0dip" android:layout_alignParentEnd="true" />
+            <ImageButton android:id="@id/backArrow" android:background="?android:selectableItemBackground" android:layout_width="56.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_arrow_back_black_24dp" android:tint="#ffffffff" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_horizontal" android:background="#ff2196f3" android:layout_width="fill_parent" android:layout_height="168.0dip">
+            <View android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" android:alpha="0.12" />
+            <TextClock android:textSize="65.0sp" android:textColor="#ffffffff" android:id="@id/textClock" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="-10.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:fontFamily="sans-serif" android:paddingStart="32.0dip" android:paddingEnd="32.0dip" />
+            <com.vanbo.homeux.dravite.newlayouttest.views.TextDate android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/dateView" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_below="@id/textClock" android:layout_centerHorizontal="true" android:textAllCaps="true" android:fontFamily="sans-serif-light" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" android:letterSpacing="0.1" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginRight="88.0dip" android:layout_alignParentBottom="true" android:alpha="0.37" android:layout_alignParentStart="true">
+                <ImageView android:id="@id/imageView4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:src="@drawable/circle_white" android:layout_weight="1.0" />
+                <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:src="@drawable/circle_white" android:layout_weight="1.0" />
+                <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:src="@drawable/circle_white" android:layout_weight="1.0" />
+                <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:src="@drawable/circle_white" android:layout_weight="1.0" />
+                <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:src="@drawable/circle_white" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <HorizontalScrollView android:id="@id/horizontalScrollView" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="64.0dip">
+                    <Spinner android:id="@id/spinner" android:padding="0.0dip" android:layout_width="192.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" />
+                    <View android:background="#ff000000" android:layout_width="1.0dip" android:layout_height="fill_parent" android:alpha="0.12" />
+                    <Spinner android:id="@id/spinner2" android:padding="0.0dip" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" />
+                </LinearLayout>
+            </HorizontalScrollView>
+            <View android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="1.0dip" android:alpha="0.12" />
+            <HorizontalScrollView android:id="@id/horizontalScrollView2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="64.0dip">
+                    <LinearLayout android:orientation="horizontal" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.vanbo.homeux.dravite.newlayouttest.views.ToggleImageButton android:id="@id/btn_align_left" android:background="@drawable/selectable_option_drawable" android:clickable="true" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_margin="4.0dip" android:src="@drawable/ic_format_align_left_black_24dp" android:tint="#ff848484" app:only_check_no_uncheck="true" />
+                        <com.vanbo.homeux.dravite.newlayouttest.views.ToggleImageButton android:id="@id/btn_align_center" android:background="@drawable/selectable_option_drawable" android:clickable="true" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_margin="4.0dip" android:checked="true" android:src="@drawable/ic_format_align_center_black_24dp" android:tint="#ff848484" app:only_check_no_uncheck="true" />
+                    </LinearLayout>
+                    <View android:background="#ff000000" android:layout_width="1.0dip" android:layout_height="fill_parent" android:alpha="0.12" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.vanbo.homeux.dravite.newlayouttest.views.ToggleImageButton android:id="@id/btn_toggle_bold" android:background="@drawable/selectable_option_drawable" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_margin="4.0dip" android:src="@drawable/ic_format_bold_black_24dp" android:tint="#ff848484" />
+                        <com.vanbo.homeux.dravite.newlayouttest.views.ToggleImageButton android:id="@id/btn_toggle_italic" android:background="@drawable/selectable_option_drawable" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_margin="4.0dip" android:src="@drawable/ic_format_italic_black_24dp" android:tint="#ff848484" />
+                    </LinearLayout>
+                    <View android:background="#ff000000" android:layout_width="1.0dip" android:layout_height="fill_parent" android:alpha="0.12" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.vanbo.homeux.dravite.newlayouttest.views.ToggleImageButton android:id="@id/btn_am_pm" android:background="@drawable/selectable_option_drawable" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_margin="4.0dip" android:src="@drawable/ic_am_pm" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

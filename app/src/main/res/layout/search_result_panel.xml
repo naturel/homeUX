@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vanbo.homeux.dravite.newlayouttest.views.SearchResultLayout android:orientation="vertical" android:id="@id/searchResultLayout" android:background="@android:color/white" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/searchResultList" android:paddingTop="88.0dip" android:paddingBottom="24.0dip" android:clickable="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+</com.vanbo.homeux.dravite.newlayouttest.views.SearchResultLayout>

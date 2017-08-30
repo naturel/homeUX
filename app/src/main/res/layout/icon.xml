@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vanbo.homeux.dravite.newlayouttest.views.AppIconView android:textAppearance="?android:textAppearanceSmall" android:textSize="12.0sp" android:textColor="#91000000" android:ellipsize="end" android:gravity="center|top" android:layout_gravity="center" android:id="@id/app" android:background="?android:selectableItemBackgroundBorderless" android:padding="0.0dip" android:focusable="false" android:focusableInTouchMode="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" android:maxLines="1" android:singleLine="true" android:freezesText="true" android:fontFamily="sans-serif-medium"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

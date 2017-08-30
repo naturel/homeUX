@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@id/appBarLayout"
+    android:background="#00ffffff"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="fill_parent"
+    android:layout_height="193.0dip"
+    android:elevation="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:id="@id/revealLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:id="@id/reveal_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/welcome_header_small"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+    <com.vanbo.homeux.dravite.newlayouttest.views.RevealImageView
+        android:id="@id/revealImgView"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:elevation="0.0dip" />
+    <android.support.v4.view.ViewPager
+        android:id="@id/appBarPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</RelativeLayout>

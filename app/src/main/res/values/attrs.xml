@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="dotColor" format="color" />
+    <attr name="dotCount" format="integer" />
+    <attr name="layout_widthPercent" format="fraction" />
+    <attr name="only_check_no_uncheck" format="boolean" />
+</resources>

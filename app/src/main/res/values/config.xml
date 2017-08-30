@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- apps grid layout line and row -->
+    <integer name="grid_picker_line_min" >3</integer>
+    <integer name="grid_picker_line_max" >6</integer>
+
+    <integer name="grid_picker_row_min" >3</integer>
+    <integer name="grid_picker_row_max" >5</integer>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ff9c27b0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/dragLayer" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="1.0dip" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/white" android:gravity="center" android:id="@id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="Swipe the top panel to the left to access your folders, swipe it to the right to access more settings." android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:fontFamily="sans-serif-light" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <RelativeLayout android:id="@id/bottomPanel" android:background="#ff7b1fa2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_okay" android:tint="@android:color/white" android:layout_alignParentEnd="true" />
+        <Button android:textColor="@android:color/white" android:id="@id/next" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="56.0dip" android:text="Finish" />
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="16.0dip" android:src="@drawable/info_top_panel" android:layout_above="@id/bottomPanel" android:layout_below="@id/textView6" />
+</RelativeLayout>

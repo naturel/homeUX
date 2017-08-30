@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="8.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.CardView android:id="@id/testMainCard" android:layout_width="fill_parent" android:layout_height="fill_parent" app:elevation="4.0dip" app:cardCornerRadius="2.0dip">
+        <com.vanbo.homeux.dravite.newlayouttest.views.CustomGridLayout android:id="@id/appGrid" android:layout_width="fill_parent" android:layout_height="fill_parent" android:rowCount="4" android:columnCount="4" />
+    </android.support.v7.widget.CardView>
+</FrameLayout>

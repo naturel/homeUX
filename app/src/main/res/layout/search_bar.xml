@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/searchInputLayout" android:background="#ff607d8b" android:padding="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/searchBackButton" android:background="?android:selectableItemBackgroundBorderless" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_arrow_back_black_24dp" android:tint="@android:color/white" />
+    <EditText android:textColor="@android:color/white" android:textColorHint="#91ffffff" android:id="@id/searchInput" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="Search app or contact" android:singleLine="true" android:layout_weight="1.0" android:imeOptions="actionDone" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <ImageButton android:id="@id/searchClearButton" android:background="?android:selectableItemBackgroundBorderless" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_clear_black_24dp" android:tint="@android:color/white" />
+</LinearLayout>

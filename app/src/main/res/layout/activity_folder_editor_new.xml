@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/contentLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@id/toolbar" android:background="#ff2196f3" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="4.0dip">
+            <Button android:textColor="@android:color/white" android:layout_gravity="end" android:id="@id/save" android:background="?android:selectableItemBackground" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/save" style="?android:attr/buttonStyleSmall" />
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout android:orientation="vertical" android:id="@id/nameLayout" android:background="@android:color/white" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="4.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="72.0dip">
+                <ImageView android:id="@id/circleIcon" android:background="?android:selectableItemBackgroundBorderless" android:padding="8.0dip" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/ic_add" android:scaleType="center" android:tint="#ff000000" android:alpha="0.57" android:layout_marginStart="16.0dip" />
+                <android.support.design.widget.TextInputLayout android:layout_gravity="center_vertical" android:id="@id/nameInput" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+                    <EditText android:textSize="16.0sp" android:textColorHint="@color/dark_gray" android:id="@id/folderName" android:background="@android:color/transparent" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="Folder name" android:fontFamily="sans-serif-medium" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <View android:id="@id/viewUnderIconSorting" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="1.0dip" android:alpha="0.12" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/iconSelector" android:background="?android:selectableItemBackground" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="72.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/chooseFolderIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Folder Icon" android:alpha="0.87" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:id="@id/chooseFolderIconInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="The icon shown in the folder list." android:alpha="0.54" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/primarySelector" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_weight="1.0">
+                    <com.vanbo.homeux.dravite.newlayouttest.views.RoundImageView android:id="@id/circlePrimary" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/welcome_header_small" android:scaleType="centerCrop" android:layout_marginStart="16.0dip" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+                        <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/choosePrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Panel" android:alpha="0.87" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:id="@id/choosePrimaryInfo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="The image/colour of tht top panel." android:alpha="0.54" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/accentSelector" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_weight="1.0">
+                    <com.vanbo.homeux.dravite.newlayouttest.views.RoundImageView android:id="@id/circleAccent" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="#ffe45252" android:scaleType="centerCrop" android:layout_marginStart="16.0dip" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+                        <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/chooseAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Accent" android:alpha="0.87" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:id="@id/chooseAccentInfo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="The colour of the floating button." android:alpha="0.54" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:id="@id/lastSeparator" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:alpha="0.12" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/appSelector" android:background="?android:selectableItemBackground" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="72.0dip">
+                <com.vanbo.homeux.dravite.newlayouttest.views.RoundImageView android:id="@id/circleApps" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="#00000000" android:scaleType="centerCrop" android:layout_marginStart="16.0dip" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/chooseApps" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Contains 203 apps" android:alpha="0.87" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:id="@id/chooseAppsInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Click to add more..." android:alpha="0.54" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="insideInset" android:id="@id/appList" android:background="#fff0f0f0" android:padding="8.0dip" android:scrollbars="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <Switch android:textColor="#88000000" android:id="@id/appSwitch" android:background="#ffffffff" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip" android:checked="false" android:text="Show only unassigned apps" android:layout_alignParentBottom="true" android:elevation="4.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

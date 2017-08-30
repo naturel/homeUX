@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/contentLayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@id/toolbar" android:background="#ff00bcd4" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="4.0dip">
+        <Button android:textColor="@android:color/white" android:layout_gravity="end" android:id="@id/save" android:background="?android:selectableItemBackground" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/save" style="?android:attr/buttonStyleSmall" />
+    </android.support.v7.widget.Toolbar>
+    <ScrollView android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" android:fillViewport="false">
+        <LinearLayout android:orientation="vertical" android:id="@id/nameLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout android:id="@id/nameInput" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="16.0dip" android:layout_marginEnd="8.0dip">
+                    <EditText android:textSize="22.0sp" android:textColorHint="@color/dark_gray" android:id="@id/label" android:background="@android:color/transparent" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/app_label_hint" />
+                </android.support.design.widget.TextInputLayout>
+                <ImageButton android:id="@id/reset_label" android:background="?android:selectableItemBackgroundBorderless" android:layout_width="56.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_refresh_black_24dp" android:tint="#ff00bcd4" android:layout_marginEnd="16.0dip" />
+            </LinearLayout>
+            <View android:background="#ff000000" android:layout_width="wrap_content" android:layout_height="1.0dip" android:alpha="0.12" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/defaultSelector" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="72.0dip">
+                <ImageView android:id="@id/circleDefault" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@mipmap/ic_launcher" android:scaleType="centerInside" android:tint="#ccffffff" android:layout_marginStart="16.0dip" android:tintMode="src_atop" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/chooseDefault" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Default icon" android:alpha="0.87" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/chooseDefaultInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="This app's default or themed icon" android:alpha="0.54" />
+                </LinearLayout>
+                <RadioButton android:id="@id/checkDefault" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_marginEnd="24.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/originalSelector" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="72.0dip">
+                <ImageView android:id="@id/circleOriginal" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@mipmap/ic_launcher" android:scaleType="centerInside" android:tint="#ccffffff" android:layout_marginStart="16.0dip" android:tintMode="src_atop" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/chooseOriginal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Original icon" android:alpha="0.87" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/chooseOriginalInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="This app's original, unthemed icon" android:alpha="0.54" />
+                </LinearLayout>
+                <RadioButton android:id="@id/checkOriginal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:layout_marginEnd="24.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/customSelector" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="72.0dip">
+                <ImageView android:id="@id/circleCustom" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@mipmap/ic_launcher" android:scaleType="centerInside" android:tint="#ccffffff" android:layout_marginStart="16.0dip" android:tintMode="src_atop" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/chooseCustom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Custom icon" android:alpha="0.87" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/chooseCustomInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="An icon from another icon pack" android:alpha="0.54" />
+                </LinearLayout>
+                <RadioButton android:id="@id/checkCustom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:layout_marginEnd="24.0dip" />
+            </LinearLayout>
+            <Button android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/btn_select_icon" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="56.0dip" android:layout_marginTop="16.0dip" android:text="@string/select_icon" android:scaleX="0.0" android:scaleY="0.0" android:paddingStart="48.0dip" android:paddingEnd="48.0dip" android:backgroundTint="#ff00bcd4" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

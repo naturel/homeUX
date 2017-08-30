@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar" android:id="@id/toolbar" android:background="?android:colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:transitionName="myToolbar" android:elevation="4.0dip" android:popupTheme="@android:style/ThemeOverlay.Material.Light">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.SearchView android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar" android:gravity="end" android:layout_gravity="end" android:id="@id/searchView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" app:queryHint="Icon keyword" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/loadingText" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/load_icons" android:layout_below="@id/progress" />
+    <android.support.v7.widget.RecyclerView android:id="@id/icon_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</RelativeLayout>

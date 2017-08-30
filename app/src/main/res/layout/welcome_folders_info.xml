@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ff2196f3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/dragLayer" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="1.0dip" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/white" android:gravity="center" android:id="@id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="Create your own folders and easily swipe through them vertically." android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:fontFamily="sans-serif-light" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <RelativeLayout android:id="@id/bottomPanel" android:background="#ff1976d2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_next" android:tint="@android:color/white" android:layout_alignParentEnd="true" />
+        <Button android:textColor="@android:color/white" android:id="@id/next" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="56.0dip" android:text="Next step" />
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="16.0dip" android:src="@drawable/info_folders" android:layout_above="@id/bottomPanel" android:layout_below="@id/textView6" />
+</RelativeLayout>

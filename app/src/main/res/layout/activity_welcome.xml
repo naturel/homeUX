@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="#ff009688" android:scaleType="centerCrop" />
+    <RelativeLayout android:background="#ff00796b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_next" android:tint="@android:color/white" android:layout_alignParentEnd="true" />
+        <Button android:textColor="@android:color/white" android:id="@id/skip" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="56.0dip" android:text="Skip tutorial" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" android:backgroundTint="#ffef6e47" />
+        <Button android:textColor="@android:color/white" android:gravity="center|right" android:id="@id/start" android:background="?android:selectableItemBackground" android:paddingRight="56.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip" android:text="Start" android:layout_toRightOf="@id/skip" android:backgroundTint="#ffef6e47" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/textContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/img" android:layout_width="128.0dip" android:layout_height="128.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/web_hi_res_512" android:layout_centerHorizontal="true" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_welcome_first" android:layout_below="@id/img" android:layout_centerHorizontal="true" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@android:color/white" android:gravity="center" android:id="@id/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_info" android:layout_below="@id/title" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

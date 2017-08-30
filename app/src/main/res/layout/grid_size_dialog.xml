@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32.0dip"
+        android:layout_marginStart="32.0dip"
+        android:orientation="vertical"
+        android:theme="?android:attr/datePickerStyle">
+
+        <NumberPicker
+            android:id="@+id/width_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:descendantFocusability="blocksDescendants"/>
+
+        <TextView
+            android:id="@id/text_width"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:alpha="0.57"
+            android:text="@string/grid_picker_line"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32.0dip"
+        android:layout_marginStart="32.0dip"
+        android:orientation="vertical"
+        android:theme="?android:attr/datePickerDialogTheme">
+
+        <NumberPicker
+            android:id="@+id/height_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:descendantFocusability="blocksDescendants"/>
+
+        <TextView
+            android:id="@id/text_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:alpha="0.57"
+            android:text="@string/grid_picker_row"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+
+</LinearLayout>

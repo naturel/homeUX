@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vanbo.homeux.dravite.newlayouttest.views.FolderNameLabel android:textColor="#ffffffff" android:gravity="center" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginTop="202.0dip" android:text="Some Folder" android:shadowColor="#aa000000" android:shadowDx="1.0" android:shadowDy="1.5" android:shadowRadius="2.0" android:drawablePadding="16.0dip" android:drawableStart="@drawable/ic_folder" android:fontFamily="sans-serif-medium" android:layout_marginStart="16.0dip" android:letterSpacing="0.1" style="?android:textAppearanceSmall" />
+    <android.support.v4.view.ViewPager android:id="@id/folder_pager" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="221.0dip" android:layout_marginBottom="0.0dip" />
+    <com.vanbo.homeux.dravite.newlayouttest.views.IndicatorView android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/indicatorView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="12.0dip" app:dotColor="#ffffffff" app:dotCount="5" />
+</FrameLayout>

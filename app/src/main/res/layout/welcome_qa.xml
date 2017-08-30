@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffc107" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/white" android:gravity="center" android:id="@id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="You can add your QuickApps here or just drag an app you like onto the QuickApp-bar." android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:fontFamily="sans-serif-light" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <LinearLayout android:id="@id/quickAppLayout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginTop="8.0dip" android:layout_below="@id/textView6">
+        <ImageButton android:background="?android:selectableItemBackgroundBorderless" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/tic_add_24dp" android:tint="@android:color/white" android:layout_weight="1.0" />
+        <ImageButton android:background="?android:selectableItemBackgroundBorderless" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/tic_add_24dp" android:tint="@android:color/white" android:layout_weight="1.0" />
+        <ImageButton android:background="?android:selectableItemBackgroundBorderless" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/tic_add_24dp" android:tint="@android:color/white" android:layout_weight="1.0" />
+        <ImageButton android:background="?android:selectableItemBackgroundBorderless" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/tic_add_24dp" android:tint="@android:color/white" android:layout_weight="1.0" />
+        <ImageButton android:background="?android:selectableItemBackgroundBorderless" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/tic_add_24dp" android:tint="@android:color/white" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/bottomPanel" android:background="#ffffa000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_next" android:tint="@android:color/white" android:layout_alignParentEnd="true" />
+        <Button android:textColor="@android:color/white" android:id="@id/next" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="56.0dip" android:text="Next Step" />
+    </RelativeLayout>
+    <ImageView android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/info_quickapps" android:scaleType="centerInside" android:layout_above="@id/bottomPanel" android:layout_below="@id/quickAppLayout" />
+</RelativeLayout>

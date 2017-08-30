@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/contentLayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="4.0dip">
+        <Button android:layout_gravity="end" android:id="@id/save" android:background="?android:selectableItemBackground" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@android:string/ok" style="?android:attr/buttonStyleSmall" />
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <LinearLayout android:orientation="horizontal" android:id="@id/hide_option" android:background="@drawable/ripple_colored_white_darkripple" android:layout_width="fill_parent" android:layout_height="72.0dip" android:layout_alignParentBottom="true" android:elevation="12.0dip">
+            <ImageView android:id="@id/icon" android:layout_width="24.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_visibility_off_black_24dp" android:tint="@android:color/black" android:alpha="0.57" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textColor="@android:color/black" android:id="@id/title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Hide used apps" android:alpha="0.89" />
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/black" android:id="@id/desc_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Don’t display apps which are already in another folder" android:alpha="0.57" />
+            </LinearLayout>
+            <Switch android:id="@id/pswitch" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="14.0dip" android:layout_marginEnd="14.0dip" />
+        </LinearLayout>
+        <CheckBox android:textSize="12.0sp" android:textColor="#99000000" android:id="@id/hideAppsInAnotherFolder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="20.0dip" android:text="Hide apps which are already contained in another folder." android:layout_alignParentBottom="true" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+        <android.support.v7.widget.RecyclerView android:id="@id/appGrid" android:paddingTop="8.0dip" android:paddingBottom="20.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/hide_option" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Opacity" android:layout_weight="1.0" android:alpha="0.57" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@android:color/black" android:id="@id/text_opactity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100%" android:alpha="0.57" />
+    </LinearLayout>
+    <SeekBar android:layout_gravity="center_horizontal" android:id="@id/seek_opacity" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="8.0dip" android:max="@integer/app_grid_height_steps" android:progress="100" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+</LinearLayout>

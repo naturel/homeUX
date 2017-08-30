@@ -25,6 +25,7 @@ import com.dravite.homeux.R;
 
 public class FolderDrawerPageFragment extends Fragment
 {
+    // just change
     public ViewPager mPager;
     int pos;
     
@@ -80,8 +81,8 @@ public class FolderDrawerPageFragment extends Fragment
             mPager.setPageTransformer(false, PageTransitionManager.getTransformer(launcherActivity.mHolder.pagerTransition));
             mPager.setOffscreenPageLimit(100);
             mPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-                float oldxOffset = 0.0f;
                 final /* synthetic */ SharedPreferences valpreferences = PreferenceManager.getDefaultSharedPreferences((Context)getActivity());
+                float oldxOffset = 0.0f;
                 
                 @Override
                 public void onPageScrollStateChanged(final int n) {
